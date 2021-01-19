@@ -21,8 +21,8 @@ nav {
     background-color: white;
 }
 nav,
-a:hover {
-  color: #8f0123;
+a{
+  color: inherit;
 }
 nav img{
   overflow: visible;
@@ -37,6 +37,19 @@ nav #toplogo {
 
 a {
   color: #111;
+}
+
+.menu{
+  display: inline-block;
+  height : 50px;
+  padding: 0 20px 0 20px;
+  line-height: 50px;
+}
+
+.menu:hover #menuderoulant, .menu:hover, .menu:hover a{
+  background-color: rgb(30,30,35);
+  color: red;
+  visibility: visible;
 }
 
 #banniere{
@@ -57,29 +70,41 @@ main {
   background-color: white;
   width: 1000px;
   text-align: justify;
-  margin: -2% auto;
+  top: -30px;
+  margin: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 5px 10px 5px 10px;
 }
+
 #menuderoulant {
-  padding: 0;
-  margin: 0;
+  color:white;
+  background-color: rgb(30,30,35);
   list-style: none;
+  visibility: hidden;
+  position: absolute;
+  top: 50px;
+  margin-top: 0;
+  width: 130px;
+  padding: 0 0 15px 0;
   text-align: center;
-  visibility: visible;
 }
+
+#menuderoulant li{
+  padding-top: 15px;
+}
+
+#menuderoulant a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
 #menuderoulant li {
-  display: inline-block;
-  position: relative;
 }
 #menuderoulant ul {
-  position: absolute;
-  z-index: 1;
-  padding: 10px;
-  border-bottom: none;
-  width: 100%;
+
 }
 #menuderoulant li:hover {
-  display: flex;
+
 }
