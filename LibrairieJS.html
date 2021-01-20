@@ -6,7 +6,100 @@
     <title>JS</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Menu Navigation -->
+    <nav>
+      <img src="img/image.jpg" alt="Logo région Occitanie" id="toplogo" />
+      <a href="sectionhtml.html" class="menu">HTML</a>
+      <a href="sectioncss.html" class="menu">CSS</a>
+      <div class="menu">
+        <a href="sectioncss.html">Mini-jeux</a>
+        <ul id="menuderoulant">
+          <li><a href="#minijeu1">Mini-jeu 1</a></li>
+          <li><a href="#minijeu2">Mini-jeu 2</a></li>
+          <li><a href="#minijeu3">Mini-jeu 3</a></li>
+          <li><a href="#minijeu4">Mini-jeu 4</a></li>
+        </ul>
+      </div>
+      <input type="search" height="10px" placeholder="Rechercher" />
+      <a href="contact.html" id="buttoncontact"> Contactez-nous</a>
+    </nav>
+    <!-- Bannière -->
+    <div id="banniere">
+      <img
+        src="img/95cdfeef.webp"
+        alt="Computer keyboard apple"
+        height="480px"
+      />
+    </div>
+
+    <main class="threejs-section">
+      <h1>Librairie JavaScript</h1>
+
+      <h2>définition</h2>
+
+      <p class="lib-p">
+        Une bibliothèque <mark>JavaScript</mark> est un fichier .js – parfois
+        plusieurs – déjà codé qui met à disposition des méthodes et des
+        propriétés pour l’ajout de fonctionnalités dynamiques à une page HTML.
+        Pour disposer de ces fonctionnalités, il est suffisant d’inclure la
+        référence absolue ou relative au fichier externe à l’intérieur du tag
+        script dans le code HTML de la page.
+      </p>
+      <p class="lib-p">
+        Les bibliothèques <mark>JavaScript</mark> sont un exemple de code
+        réutilisable (ou reusable code en anglais). Le même principe s'applique
+        en effet également aux CSS ou à d'autres technologies : il s'agit tout
+        simplement de penser à du code qui peut être utilisé, avec des
+        adaptations, dans plusieurs applications possibles. Dans le cas du code
+        normal, le développeur a comme objectif directe une application
+        spécifique, par exemple une application drag&drop qui permet de mettre
+        en ordre les planètes en fonction de leur ordre par rapport au soleil.
+        Dans le cas du code réutilisable, le développeur veut plutôt mettre à
+        disposition d'autres développeurs du code qu'ils peuvent intégrer dans
+        leurs applications. En gardant le même exemple, un développeur peut
+        construire une bibliothèque JavaScript qui permet de faire du drag&drop
+        (voir par exemple jQuery UI). Donc il conçoit du code qui peut être
+        adapté par la suite par un autre développeur à la disposition des
+        planètes, à traîner un produit dans le shopping cart d'un site de
+        e-commerce, etc. En d'autres termes, les bibliothèques JavaScript ne
+        permettent pas de faire des choses qu'on ne pourrait pas faire avec du
+        vanilla JavaScript. Au contraire, les bibliothèques JavaScript utilisent
+        dans la plupart des cas du vanilla JavaScript. Dans d'autres cas, on a
+        des bibliothèques qui sont construites à partir d'autres bibliothèques.
+      </p>
+      <h1>Présentation de Three.Js</h1>
+
+      <p class="lib-p">
+        Three.js est une bibliothèque <mark>JavaScript</mark> pour créer des
+        scènes 3D dans un navigateur web. Elle peut être utilisée avec la balise
+        canvas du HTML5 sans avoir besoin d'un plugin. Le code source est
+        hébergé sur le GitHub de son créateur mrDoob. Son principe est d'être
+        accessible à tout le monde, elle permet des rendus en WebGL, CSS3D et
+        SVG.
+      </p>
+
+      <h2>Pour quels résultats?</h2>
+
+      <p class="lib-p">Une petite partie de flipper...</p>
+
+      <iframe
+        src="http://letsplay.ouigo.com/"
+        width="100%"
+        height="500px"
+        frameborder="0"
+      ></iframe>
+
+      <p class="lib-p">...Ou bien essayer une voiture:)</p>
+
+      <iframe
+        src="http://vr.ff.com/us/"
+        width="100%"
+        height="500px"
+        frameborder="0"
+      ></iframe>
+    </main>
+  </body>
   <footer class="footer">
     <link href="footer.css" rel="stylesheet" />
     <div class="flex">

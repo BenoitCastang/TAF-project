@@ -12,6 +12,15 @@ body {
   margin: 0;
 }
 
+h1{
+  font-size: 3em;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 1.8em;
+}
+
 nav {
   width: 1000px;
   height: 50px;
@@ -143,7 +152,7 @@ main {
   font-size: 14px;
 }
 
-/* css YaMa pour la page librairieJS */
+/* css YaMa pour la page Mini-Jeux */
 
 mark {
   background-color: #ffd702;
@@ -167,6 +176,115 @@ mark {
 }
 
 /* css YaMa pour la page contact.html */
+
+#contact-main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.main-title{
+  position: relative;
+}
+
+#distance-social{
+width: 20em;
+}
+
+#lave-main{
+  position: absolute;
+  width: 20em;
+  padding-left: 15em;
+}
+
+iframe{
+  margin: 3em;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  margin: 2em;
+  border: 2px solid #D9DDE6;
+  border-radius: 6px;
+  /* box-shadow: 5px 4px 3px -1px #000000; */
+  width: 80%;
+  max-width: 1000px;
+}
+
+.submit-container button{
+  padding: 1em;
+  background-color: #C10230;
+  outline-color: #C10230;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: none;
+  width: 150px;
+}
+
+
+.submit-container button:hover{
+  background-color: #8f0123;
+
+}
+
+label{
+  font-weight: 700;
+}
+
+label[for="name"]{
+  margin-top: 5em;
+  margin: 0.2em;
+}
+
+input[id="name"], input[id="email"], textarea[id="password"]{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-family: inherit;
+  padding: 0 .5em;
+  width: 80%;
+  border: 2px solid #C10230;
+  border-radius: 6px;
+  background: #FFF;
+  min-height: 2.25em;
+  line-height: 2.25em;
+  
+}
+
+textarea{
+  vertical-align: text-top;
+  resize : both;
+  min-width : 100px;
+  min-height : 100px;
+  max-width : 400px;
+  max-height : 200px;
+}
+
+
+/* css YaMa pour la page LibrairieJS.html */
+
+p.lib-p{
+  font-size: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
 /* css BenoitCastang pages html et css */
 
