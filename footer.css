@@ -1,42 +1,40 @@
-
-.text1{
-        line-height: 1.2;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: center;
-        font-size: 20px;
-
-    }
-
-.footer{
-        display: block;
-        padding-top: 2em;
-        padding-bottom: 2em;
-        background: #000000;
-        color: blanchedalmond;
-    }
-
-body{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-.flex{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-      
-.flex div{
-    width: 300px;
-    border: solid 1px white;
-    justify-content: center;
-
+.text1 {
+  line-height: 1.2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 20px;
 }
 
-a:link {
-    color: blanchedalmond; 
-    text-decoration: none;
+.footer {
+  display: block;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #000000;
+  color: blanchedalmond;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex div {
+  width: 300px;
+  /* border: solid 1px white; */
+  justify-content: center;
+}
+
+a {
+  color: blanchedalmond;
+  text-decoration: none;
 }
 
 a:hover {
@@ -45,11 +43,14 @@ a:hover {
 }
 
 a:active {
-    color: darkgoldenrod;
-    text-decoration: none; 
+  color: darkgoldenrod;
+  text-decoration: none;
 }
 
 a:visited {
-    color: blanchedalmond; 
-    text-decoration: none;
-  }
+  color: blanchedalmond;
+  text-decoration: none;
+}
+.icone {
+  color: blanchedalmond;
+}
