@@ -1,32 +1,27 @@
-html {
-    background-image:url(img/ADrar.png);
-    background-size:contain;
-    background-repeat:repeat;
-}
-
-body {
-    background-image:url(img/html.png);
-}
-
-main {
+ main {
     width: 500px;
-    margin: 100px;
-    background-color: rgb(206, 111, 43, 0.8);
+    background-color: rgba(241, 198, 169, 0.8);
     position: relative;
     margin-right: auto;
     margin-left: auto;
     padding: 20px;
     text-align: center;
+    border:solid 1px;
 }
 
 h1 {
-    /* position: relative; */
-    /* margin-right: auto; */
-    /* margin-left: auto; */
+    position: relative; 
+    margin-right: auto; 
+    margin-left: auto; 
     border:solid 1px;
 }
 
 p {
     text-indent: 3ch;
     text-align:justify;
+    padding: 10px;
+}
+
+img{
+    image-resolution: 100dpi;
 }
