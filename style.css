@@ -119,10 +119,9 @@ main {
   border-top-right-radius: 10px;
   padding: 5px 10px 5px 10px;
 }
-<<<<<<< Updated upstream
 
 #menuderoulant {
-  color: white;
+  color: #c10230;
   background-color: rgb(30, 30, 35);
   list-style: none;
   visibility: hidden;
@@ -139,41 +138,30 @@ main {
 }
 
 #menuderoulant a {
-  color: white;
+  color: #c10230;
   text-decoration: none;
   font-size: 14px;
 }
 
-#menuderoulant li {
-}
-#menuderoulant ul {
-}
-#menuderoulant li:hover {
-}
-
 /* css pour la page jeux JS */
 
-mark{
-  background-color: #FFD702;
+mark {
+  background-color: #ffd702;
   border-radius: 2px;
 }
 
-.main-title-js{
+.main-title-js {
   padding-top: 2em;
   font-size: 3em;
 }
 
-.mini-game-title{
+.mini-game-title {
   font-size: 2.5em;
   padding-top: 1.5em;
   padding-bottom: 1em;
-  text-decoration: #FFD702 underline wavy ;
+  text-decoration: #ffd702 underline wavy;
 }
 
-.mini-game-p{
+.mini-game-p {
   font-size: 1.5em;
 }
-
-
-=======
->>>>>>> Stashed changes
