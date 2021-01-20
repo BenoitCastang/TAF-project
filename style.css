@@ -167,3 +167,36 @@ mark {
 }
 
 /* css YaMa pour la page contact.html */
+
+/* css BenoitCastang pages html et css */
+
+#main-htmlcss {
+  width: 500px;
+  background-color: rgba(241, 198, 169, 0.8);
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  text-align: center;
+  border:solid 1px;
+}
+
+#h1-htmlcss{
+  position: relative; 
+  margin-right: auto; 
+  margin-left: auto; 
+  border:solid 1px;
+}
+
+#paragraphs-htmlcss {
+  text-indent: 3ch;
+  text-align:justify;
+  padding: 10px;
+}
+
+.images-articles{
+  float: right;
+  padding-left: 20px;
+}
+
+/* fin css BenoitCastang pages html et css */
