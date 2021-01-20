@@ -1,4 +1,4 @@
-main {
+ main {
     width: 500px;
     background-color: rgba(241, 198, 169, 0.8);
     position: relative;
@@ -11,11 +11,17 @@ main {
 
 h1 {
     position: relative; 
-ouvfîqenp
-reaon^v
-
-
+    margin-right: auto; 
+    margin-left: auto; 
+    border:solid 1px;
 }
-zklvnaôfi
 
-bla bla
+p {
+    text-indent: 3ch;
+    text-align:justify;
+    padding: 10px;
+}
+
+img{
+    image-resolution: 100dpi;
+}
