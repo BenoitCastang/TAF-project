@@ -12,6 +12,15 @@ body {
   margin: 0;
 }
 
+h1{
+  font-size: 3em;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 1.8em;
+}
+
 nav {
   width: 1000px;
   height: 50px;
@@ -267,3 +276,14 @@ textarea{
   max-width : 400px;
   max-height : 200px;
 }
+
+
+/* css YaMa pour la page LibrairieJS.html */
+
+p.lib-p{
+  font-size: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
