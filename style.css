@@ -204,6 +204,10 @@ form {
   max-width: 1000px;
 }
 
+.submit-container{
+  padding: 2em;
+}
+
 .submit-container button {
   padding: 1em;
   background-color: #c10230;
@@ -217,15 +221,18 @@ form {
   text-align: center;
   box-shadow: none;
   width: 150px;
+  height: 50px;
 }
 
 .submit-container button:hover {
   background-color: #8f0123;
 }
 
-.submit-container button a:hover{
-  padding: 4em 4em;
+.submit-container button a{
+  width: 150px;
+  height: 50px;
 }
+
 
 label {
   font-weight: 700;
