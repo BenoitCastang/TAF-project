@@ -152,7 +152,7 @@ mark {
   font-size: 2.5em;
   padding-top: 1.5em;
   padding-bottom: 1em;
-  text-decoration: #ffd702 underline wavy;
+  text-decoration: #ffd702 underline;
 }
 
 .mini-game-p {
@@ -223,7 +223,6 @@ form {
   text-decoration: none;
   text-align: center;
   box-shadow: none;
-  width: 150px;
   height: 50px;
 }
 
@@ -273,6 +272,17 @@ textarea {
   min-height: 100px;
   max-width: 400px;
   max-height: 200px;
+}
+
+#validate-contact{
+  background-color: #ffcd00;
+  padding: 10px;
+  border-radius: 10px; 
+}
+
+#validate-contact:hover {
+  background-color: #fcd32f;
+  color: #c10230;
 }
 
 /* fin css YaMa pour la page contact.html */
