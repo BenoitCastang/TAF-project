@@ -12,15 +12,15 @@ body {
   margin: 0;
 }
 
-h1{
+h1 {
   font-size: 3em;
   font-weight: 600;
 }
 
-h2{
+h2 {
   font-size: 1.8em;
 }
-
+/* Haut de page-Navigation Start */
 nav {
   width: 1000px;
   height: 50px;
@@ -32,7 +32,10 @@ nav {
 }
 nav,
 a {
-  color: inherit;
+  color: #111;
+}
+a:visited {
+  color: #111;
 }
 nav img {
   overflow: visible;
@@ -44,7 +47,6 @@ nav #toplogo {
   border-bottom-right-radius: 10px;
   width: 170px;
 }
-
 #buttoncontact {
   background-color: #ffcd00;
   padding: 10px;
@@ -104,6 +106,7 @@ a {
 #menuderoulant a:hover {
   color: black;
 }
+
 #banniere {
   margin: auto;
   width: 1100px;
@@ -112,6 +115,8 @@ a {
 #banniere img {
   width: 100%;
 }
+
+/* Haut de page-Navigation End */
 
 header {
   text-align: justify;
@@ -128,30 +133,6 @@ main {
   border-top-right-radius: 10px;
   padding: 5px 10px 5px 10px;
 }
-
-#menuderoulant {
-  color: #c10230;
-  background-color: rgb(30, 30, 35);
-  list-style: none;
-  visibility: hidden;
-  position: absolute;
-  top: 50px;
-  margin-top: 0;
-  width: 130px;
-  padding: 0 0 15px 0;
-  text-align: center;
-}
-
-#menuderoulant li {
-  padding-top: 15px;
-}
-
-#menuderoulant a {
-  color: #c10230;
-  text-decoration: none;
-  font-size: 14px;
-}
-
 /* css YaMa pour la page Mini-Jeux */
 
 mark {
@@ -177,56 +158,56 @@ mark {
 
 /* debut css YaMa pour la page contact.html */
 
-#contact-main-container{
+#contact-main-container {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
 }
 
-.main-title{
+.main-title {
   position: relative;
 }
 
-#distance-social{
-width: 20em;
+#distance-social {
+  width: 20em;
 }
 
-#lave-main{
+#lave-main {
   position: absolute;
   width: 20em;
   padding-left: 15em;
 }
 
-iframe{
+iframe {
   margin: 3em;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.row{
+.row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background-color: #fff;
   margin: 2em;
-  border: 2px solid #D9DDE6;
+  border: 2px solid #d9dde6;
   border-radius: 6px;
   /* box-shadow: 5px 4px 3px -1px #000000; */
   width: 80%;
   max-width: 1000px;
 }
 
-.submit-container button{
+.submit-container button {
   padding: 1em;
-  background-color: #C10230;
-  outline-color: #C10230;
+  background-color: #c10230;
+  outline-color: #c10230;
   color: #fff;
   font-size: 1.2em;
   font-weight: 400;
@@ -238,50 +219,49 @@ form{
   width: 150px;
 }
 
-
-.submit-container button:hover{
+.submit-container button:hover {
   background-color: #8f0123;
-
 }
 
-label{
+label {
   font-weight: 700;
 }
 
-label[for="name"]{
+label[for="name"] {
   margin-top: 5em;
   margin: 0.2em;
 }
 
-input[id="name"], input[id="email"], textarea[id="password"]{
+input[id="name"],
+input[id="email"],
+textarea[id="password"] {
   margin-top: 2em;
   margin-bottom: 1em;
   font-size: 1em;
   font-family: inherit;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   width: 80%;
-  border: 2px solid #C10230;
+  border: 2px solid #c10230;
   border-radius: 6px;
-  background: #FFF;
+  background: #fff;
   min-height: 2.25em;
   line-height: 2.25em;
-  
 }
 
-textarea{
+textarea {
   vertical-align: text-top;
-  resize : both;
-  min-width : 100px;
-  min-height : 100px;
-  max-width : 400px;
-  max-height : 200px;
+  resize: both;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 400px;
+  max-height: 200px;
 }
 /* fin css YaMa pour la page contact.html */
 
 
 /* debut css YaMa pour la page LibrairieJS.html */
 
-p.lib-p{
+p.lib-p {
   font-size: 1.2em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -299,23 +279,23 @@ p.lib-p{
   margin-left: auto;
   padding: 20px;
   text-align: center;
-  border:solid 1px;
+  border: solid 1px;
 }
 
-#h1-htmlcss{
-  position: relative; 
-  margin-right: auto; 
-  margin-left: auto; 
-  border:solid 1px;
+#h1-htmlcss {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid 1px;
 }
 
 #paragraphs-htmlcss {
   text-indent: 3ch;
-  text-align:justify;
+  text-align: justify;
   padding: 10px;
 }
 
-.images-articles{
+.images-articles {
   float: right;
   padding-left: 20px;
 }
