@@ -1,48 +1,44 @@
-
-.text1{
-        line-height: 1.2;
-        font-family: system-ui;
-        text-align: center;
-        font-size: 20px;
-
-    }
-
-
-.text2{
-        line-height: 1.2;
-        font-family: system-ui;
-        font-size: 15px;
-        text-align: center;
+.text1 {
+  line-height: 1.2;
+  /* font-family: system-ui; */
+  text-align: center;
+  font-size: 20px;
 }
-.footer{
-        display: block;
-        padding-top: 2em;
-        padding-bottom: 2em;
-        background: #000000;
-        color: blanchedalmond;
-    }
 
-body{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-.flex{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.text2 {
+  line-height: 1.2;
+  /* font-family: system-ui; */
+  font-size: 15px;
+  text-align: center;
 }
-      
-.flex div{
-    width: 300px;
-    justify-content: center;
+.footer {
+  display: block;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #000000;
+  color: blanchedalmond;
+}
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex div {
+  width: 300px;
+  justify-content: center;
 }
 
 a:link {
-    color: blanchedalmond; 
-    text-decoration: none;
+  color: blanchedalmond;
+  text-decoration: none;
 }
 
 a:hover {
@@ -51,11 +47,11 @@ a:hover {
 }
 
 a:active {
-    color: darkgoldenrod;
-    text-decoration: none; 
+  color: darkgoldenrod;
+  text-decoration: none;
 }
 
 a:visited {
-    color: blanchedalmond; 
-    text-decoration: none;
-  }
+  color: blanchedalmond;
+  text-decoration: none;
+}
