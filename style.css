@@ -5,7 +5,7 @@ body {
   font-size: 0.9em;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 2.7;
   color: #111;
   width: 100%;
   height: 100vh;
@@ -33,6 +33,7 @@ nav {
 nav,
 a {
   color: #111;
+  text-decoration: none;
 }
 a:visited {
   color: #111;
@@ -51,6 +52,7 @@ nav #toplogo {
   background-color: #ffcd00;
   padding: 10px;
   border-radius: 10px;
+  font-weight: bold;
 }
 #buttoncontact:hover {
   background-color: #fcd32f;
@@ -204,7 +206,7 @@ form {
   max-width: 1000px;
 }
 
-.submit-container{
+.submit-container {
   padding: 2em;
 }
 
@@ -228,11 +230,15 @@ form {
   background-color: #8f0123;
 }
 
-.ancre-bottom-contact-box{
+.submit-container button a:hover {
+  padding: 4em 4em;
+}
+.submit-container button a {
+}
+.ancre-bottom-contact-box {
   width: 150px;
   height: 50px;
 }
-
 
 label {
   font-weight: 700;
@@ -315,6 +321,13 @@ p.lib-p {
 
 /* css Vanessa_footer */
 
+.footer {
+  display: block;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #000000;
+  color: blanchedalmond;
+}
 .footer .text1 {
   line-height: 1.2;
   text-align: center;
@@ -328,27 +341,17 @@ p.lib-p {
   color: blanchedalmond;
 }
 
-.footer {
-  display: block;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background: #000000;
-  color: blanchedalmond;
-}
-
-/* body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-} */
-
 .flex {
   display: flex;
   justify-content: center;
   text-align: center;
   color: blanchedalmond;
 }
-
+#flex2 img {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
 .flex div {
   width: 300px;
   justify-content: center;
@@ -359,7 +362,9 @@ p.lib-p {
   color: blanchedalmond;
   text-decoration: none;
 }
-
+.footer a:visited {
+  color: blanchedalmond;
+}
 .footer a:hover {
   color: darkgoldenrod;
   text-decoration: none;
