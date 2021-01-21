@@ -175,7 +175,7 @@ mark {
   font-size: 1.5em;
 }
 
-/* css YaMa pour la page contact.html */
+/* debut css YaMa pour la page contact.html */
 
 #contact-main-container{
   display: flex;
@@ -276,15 +276,18 @@ textarea{
   max-width : 400px;
   max-height : 200px;
 }
+/* fin css YaMa pour la page contact.html */
 
 
-/* css YaMa pour la page LibrairieJS.html */
+/* debut css YaMa pour la page LibrairieJS.html */
 
 p.lib-p{
   font-size: 1.2em;
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
+/*  fin css YaMa pour la page LibrairieJS.html */
 
 /* css BenoitCastang pages html et css */
 
@@ -318,3 +321,104 @@ p.lib-p{
 }
 
 /* fin css BenoitCastang pages html et css */
+
+/* debut css YaMa pour la page login.html */
+
+.main-login {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 7%, rgba(255,215,2,1) 25%, rgba(193,2,48,1) 100%);
+  width: 400px;
+  height: 400px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  border: 1px dotted #111;
+  opacity: 0.9;
+}
+
+.title-sign-login {
+  padding-top: 40px;
+  color: #111;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.input-user-login {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+form.form-login {
+  padding-top: 40px;
+  
+}
+
+.input-pass-login {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+
+.input-user-login:focus,
+.input-pass-login:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+
+}
+
+.submit {
+  font-size: 0.9em;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  background: #C10230;
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 35%;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+#p-forgot-login {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #111;
+  padding-top: 15px;
+}
+
+#ancre-submit-login{
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #111;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .main {
+      border-radius: 0px;
+  }
+}
+
+/* fin css YaMa pour la page login.html */
