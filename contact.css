@@ -1,0 +1,160 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #111;
+    height: 100vh;
+    background-color: #FFCD00;
+    text-rendering: geometricPrecision;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 30em;
+    border:5px solid red;
+    min-height: 100vh;
+    min-width: 950px;
+}
+
+h1{
+    position: relative;
+    font-weight: 900;
+    font-size: 1.5em;
+
+}
+
+
+h2{
+    font-size: 1.25em;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 ~ img{
+    width: 20%;
+}
+
+img:nth-of-type(2){
+    float: right;
+}
+
+p{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.main-title{
+    margin: 3em;
+    border: 3px dotted green;
+}
+
+.main-title h1{
+    margin: 2em;
+    border: 3px solid violet;
+}
+
+.main-title h2{
+    margin: 1em;
+    border: 3px solid red;
+}
+
+iframe{
+    margin: 3em;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    margin: 3em;
+    border: 1px solid #8B99A1;
+    border-radius: 6px;
+    /* box-shadow: 5px 4px 3px -1px #000000; */
+    width: 80%;
+    max-width: 1000px;
+}
+
+.submit-container button{
+    padding: 1em;
+    background-color: #C10230;
+    outline-color: #C10230;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: none;
+    width: 150px;
+}
+
+
+.submit-container button:hover{
+    background-color: #8f0123;
+
+}
+
+label{
+    font-weight: 700;
+}
+
+label[for="name"]{
+    margin-top: 5em;
+    margin: 0.2em;
+}
+
+input[id="name"], input[id="email"], textarea[id="password"]{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-family: inherit;
+    padding: 0 .5em;
+    width: 80%;
+    border: 2px solid #C10230;
+    border-radius: 6px;
+    background: #FFF;
+    min-height: 2.25em;
+    line-height: 2.25em;
+}
+
+textarea{
+    vertical-align: middle;
+    resize : both;
+    min-width : 100px;
+    min-height : 100px;
+    max-width : 400px;
+    max-height : 200px;
+}
+
+footer{
+    background-color: #111;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+}
+
+footer a{
+    color: #fff;
+    float: right;
+}

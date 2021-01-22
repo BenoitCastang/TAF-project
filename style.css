@@ -1,0 +1,497 @@
+html,
+body {
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  line-height: 2.7;
+  color: #111;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* Haut de page-Navigation Start */
+nav {
+  width: 1000px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+nav,
+a {
+  color: #111;
+  text-decoration: none;
+}
+a:visited {
+  color: #111;
+}
+nav img {
+  overflow: visible;
+  align-self: start;
+  z-index: 1;
+}
+nav #toplogo {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 170px;
+}
+#buttoncontact {
+  background-color: #ffcd00;
+  padding: 3px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+#buttoncontact:hover {
+  background-color: #fcd32f;
+  color: #c10230;
+  padding: 5px;
+}
+
+a {
+  color: #111;
+}
+
+.menu {
+  display: inline-block;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  line-height: 50px;
+  color: #111;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu:hover #menuderoulant,
+/* .menu:hover, */
+.menu:hover a {
+  background-color: white;
+  color: #c10230;
+  visibility: visible;
+}
+.menu:hover {
+  color: #c10230;
+}
+#menuderoulant {
+  background-color: white;
+  list-style: none;
+  visibility: hidden;
+  position: absolute;
+  top: 50px;
+  margin-top: 0;
+  width: 130px;
+  padding: 0 0 15px 0;
+  text-align: center;
+}
+
+#menuderoulant li {
+  padding-top: 15px;
+}
+
+#menuderoulant a {
+  color: #c10230;
+  text-decoration: none;
+  font-size: 14px;
+}
+#menuderoulant a:hover {
+  color: black;
+}
+
+#banniere {
+  margin: auto;
+  width: 1100px;
+}
+
+#banniere img {
+  width: 100%;
+}
+
+/* Haut de page-Navigation End */
+
+header {
+  text-align: justify;
+  max-width: 850px;
+}
+main {
+  position: relative;
+  background-color: white;
+  width: 1000px;
+  text-align: justify;
+  top: -30px;
+  margin: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+/* css YaMa pour la page Mini-Jeux */
+
+mark {
+  background-color: #ffd702;
+  border-radius: 2px;
+}
+
+.main-title-js {
+  padding-top: 2em;
+  font-size: 3em;
+}
+
+.mini-game-title {
+  font-size: 2.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  text-decoration: #ffd702 underline;
+}
+
+.mini-game-p {
+  font-size: 1.5em;
+}
+
+/* debut css YaMa pour la page contact.html */
+
+#contact-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.main-title {
+  position: relative;
+}
+
+#distance-social {
+  width: 20em;
+}
+
+#lave-main {
+  position: absolute;
+  width: 20em;
+  padding-left: 15em;
+}
+
+iframe {
+  margin: 3em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  margin: 2em;
+  border: 2px solid #d9dde6;
+  border-radius: 6px;
+  /* box-shadow: 5px 4px 3px -1px #000000; */
+  width: 80%;
+  max-width: 1000px;
+}
+
+.submit-container {
+  padding: 2em;
+}
+
+.submit-container button {
+  padding: 1em;
+  background-color: #c10230;
+  outline-color: #c10230;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: none;
+  height: 50px;
+}
+
+.submit-container button:hover {
+  background-color: #8f0123;
+}
+
+.submit-container button a:hover {
+  padding: 4em 4em;
+}
+/* .submit-container button a {
+} */
+.ancre-bottom-contact-box {
+  width: 150px;
+  height: 50px;
+}
+
+label {
+  font-weight: 700;
+}
+
+label[for="name"] {
+  margin-top: 5em;
+  margin: 0.2em;
+}
+
+input[id="name"],
+input[id="email"],
+textarea[id="password"] {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-family: inherit;
+  padding: 0 0.5em;
+  width: 80%;
+  border: 2px solid #c10230;
+  border-radius: 6px;
+  background: #fff;
+  min-height: 2.25em;
+  line-height: 2.25em;
+}
+
+textarea {
+  vertical-align: text-top;
+  resize: both;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 400px;
+  max-height: 200px;
+}
+
+#validate-contact {
+  background-color: #ffcd00;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#validate-contact:hover {
+  background-color: #fcd32f;
+  color: #c10230;
+}
+
+/* fin css YaMa pour la page contact.html */
+
+/* debut css YaMa pour la page LibrairieJS.html */
+
+.lib-p {
+  font-size: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/*  fin css YaMa pour la page LibrairieJS.html */
+
+/* css BenoitCastang pages html et css */
+
+#main-htmlcss {
+  width: 500px;
+  background-color: rgba(241, 198, 169, 0.8);
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  text-align: center;
+  border: solid 1px;
+}
+
+#h1-htmlcss {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid 1px;
+}
+
+#paragraphs-htmlcss {
+  text-indent: 3ch;
+  text-align: justify;
+  padding: 10px;
+}
+
+.images-articles {
+  float: right;
+  padding-left: 20px;
+}
+
+/* fin css BenoitCastang pages html et css */
+
+/* css Vanessa_footer */
+
+.footer {
+  display: block;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #000000;
+  color: blanchedalmond;
+}
+.footer .text1 {
+  line-height: 1.2;
+  text-align: center;
+  font-size: 20px;
+  color: blanchedalmond;
+}
+.footer .text2 {
+  line-height: 1.2;
+  font-size: 15px;
+  text-align: center;
+  color: blanchedalmond;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: blanchedalmond;
+}
+#flex2 img {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+.flex div {
+  width: 300px;
+  justify-content: center;
+  color: blanchedalmond;
+}
+
+.footer a:link {
+  color: blanchedalmond;
+  text-decoration: none;
+}
+.footer a:visited {
+  color: blanchedalmond;
+}
+.footer a:hover {
+  color: darkgoldenrod;
+  text-decoration: none;
+}
+
+.footer a:active {
+  color: blanchedalmond;
+  text-decoration: none;
+}
+/* fin css Vanessa_footer*/
+
+/* debut css YaMa pour la page login.html */
+
+.main-login {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 7%,
+    rgba(255, 215, 2, 1) 25%,
+    rgba(193, 2, 48, 1) 100%
+  );
+  width: 1000px;
+  height: 600px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  /* box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14); */
+  opacity: 0.9;
+  border: rgba(255, 255, 255, 1) 7%;
+}
+
+.title-sign-login {
+  padding-top: 40px;
+  color: #111;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.input-user-login {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  letter-spacing: 1px;
+  background: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+form.form-login {
+  padding-top: 40px;
+}
+
+.input-pass-login {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  letter-spacing: 1px;
+  background: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.input-user-login:focus,
+.input-pass-login:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18);
+}
+
+.submit-button-login {
+  font-size: 0.9em;
+  cursor: pointer;
+  /* border-radius: 5px; */
+  color: #fff;
+  border: 0;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  background-color: #ffcd00;
+  padding: 10px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.submit-button-login:hover {
+  background-color: #fcd32f;
+  color: #8f0123;
+  width: 160px;
+}
+
+#p-forgot-login {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #111;
+  padding-top: 15px;
+}
+
+#ancre-submit-login {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #111;
+  text-decoration: none;
+}
+
+#ancre-submit-login:hover {
+  color: #c10230;
+}
+
+@media (max-width: 600px) {
+  .main-login {
+    border-radius: 0px;
+  }
+}
