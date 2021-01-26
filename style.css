@@ -387,21 +387,25 @@ textarea {
 @keyframes sky-animation {
   0% {
     /* background-color: orangered; */
-    background:linear-gradient(#191970, #0d0d79)
+    background:linear-gradient(#88889c, #0d0d79);
   }
-  30% {
-    background: linear-gradient(orange, 76%, red);
+  70% {
+    background: linear-gradient(orange, 70%, red);
+    opacity: 90%;
+    
   }
-  35% {
+  80% {
     /* background-color:yellow; */
-    background-color: rgb(107, 179, 207);
+    background:linear-gradient(blue, 20%, skyblue)
+    opacity: 80%;
   }
-  75% {
+  /* 75% { */
     /* background-color:yellow; */
-    background-color: rgb(100, 185, 219);
-  }
-  100% {
-    background-color: skyblue;
+    /* background-color: rgb(100, 185, 219); */
+    /* } */
+    100% {
+      background-color: skyblue;
+      opacity: 95%;
   }
 }
 
@@ -412,9 +416,9 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  animation: sky-animation 5s;
-  transition-timing-function: linear;
-  animation-direction: normal;
+  animation: sky-animation 10s;
+  /* transition-timing-function: linear; */
+  /* animation-direction: normal; */
   animation-fill-mode: forwards;
 }
 
@@ -447,11 +451,11 @@ textarea {
   width: 200px;
   border-radius: 50%;
   /* border-radius: 50% / 100% 100% 0% 0%; */
-  background-color: yellow;
+  background: radial-gradient(orange 40%, yellow 50%);
   position: relative;
   top: 75%;
   left: 35%;
-  animation: sun-animation 5s;
+  animation: sun-animation 10s;
   /* animation-play-state: paused; */
   transition-timing-function: linear;
   /* animation-fill-mode: forwards; */
