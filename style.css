@@ -386,26 +386,19 @@ textarea {
 
 @keyframes sky-animation {
   0% {
-    /* background-color: orangered; */
     background:linear-gradient(#88889c, #0d0d79);
   }
-  70% {
+  30% {
     background: linear-gradient(orange, 70%, red);
-    opacity: 90%;
-    
   }
-  80% {
-    /* background-color:yellow; */
-    background:linear-gradient(blue, 20%, skyblue)
-    opacity: 80%;
+  40% {
+    background:linear-gradient(blue, 20%, skyblue);
   }
-  /* 75% { */
-    /* background-color:yellow; */
-    /* background-color: rgb(100, 185, 219); */
-    /* } */
-    100% {
-      background-color: skyblue;
-      opacity: 95%;
+  60% {
+    background-color: skyblue;
+    }
+  100% {
+    background-color: skyblue;
   }
 }
 
@@ -416,21 +409,31 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  animation: sky-animation 10s;
-  /* transition-timing-function: linear; */
-  /* animation-direction: normal; */
+  animation-name: sky-animation;
+  animation-duration: 40s;
+  transition-timing-function: linear;
+  animation-direction: normal;
   animation-fill-mode: forwards;
 }
 
-.stars {
-   width: 10px;
+/* .stars {
+  width: 10px;
   border-radius: 50%;
-   border-radius: 50% / 100% 100% 0% 0%;
+  border-radius: 50% / 100% 100% 0% 0%;
   background-color: whitesmoke;
   position: absolute;
   top: 80%;
   left: 35%;
- }
+ } */
+
+/* @keyframes sea-animation {
+  20% {
+    background: linear-gradient(seagreen, #0d0d79);
+  }
+  100% {
+    background: linear-gradient(skyblue, seagreen);
+  }
+} */
 
 #sea {
   width: 100%;
@@ -438,6 +441,10 @@ textarea {
   position: relative;
   top: 50%;
   background: linear-gradient(rgb(10, 5, 105), 20%, rgb(1, 2, 20));
+  /* animation: sea-animation 10s;
+  transition-timing-function: linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards; */
 }
 
 @keyframes sun-animation {
@@ -451,16 +458,14 @@ textarea {
   width: 200px;
   border-radius: 50%;
   /* border-radius: 50% / 100% 100% 0% 0%; */
-  background: radial-gradient(orange 40%, yellow 50%);
+  background: radial-gradient(orange 30%, yellow);
   position: relative;
   top: 75%;
   left: 35%;
-  animation: sun-animation 10s;
+  animation-name: sun-animation;
+  animation-duration: 40s;
   /* animation-play-state: paused; */
-  transition-timing-function: linear;
-  /* animation-fill-mode: forwards; */
-  animation-direction: alternate;
-  transition-timing-function: linear;
+  /* transition-timing-function: normal; */
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
