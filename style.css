@@ -323,9 +323,62 @@ textarea {
   padding: 10px;
 }
 
-.images-articles {
+#css-logo {
   float: right;
-  padding-left: 20px;
+  padding-left: 60px;
+}
+
+#html-logo {
+  float: left;
+  padding-right: 10px;
+}
+
+@keyframes css-logo-animation {
+  0% {
+      /* transform: translateX(0px); */
+      /* width: 200px; */
+      transform: rotate(8turn);
+      /* margin-left: 50px; */
+    }
+  25% {
+      /* width: 225px; */
+      /* margin-left: 90px; */
+      margin-left: 70px;
+    }
+    50% {
+      /* transform:translateX(150px) perspective(0.5cm); */
+      /* /* transform: translateX(1000px) */
+      /* width: 250px; */
+      margin-bottom: 30px;
+    }
+    75% {
+      /* background-color: tomato; */
+      /* width: 275px; */
+      /* margin-left: 80px; */
+    }
+    100% {
+      /* transform: translateX(1000px), matrix(25px); */
+      /* width: 200px; */
+    }
+}
+
+#css-logo:hover {
+  /* background-color: blue; */
+  animation: css-logo-animation 5s;
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+}
+
+@keyframes html-logo-animation {
+  50% {
+    width: 230px;
+    margin-left: 10px;
+  } 
+}
+
+#html-logo:hover {
+  animation: html-logo-animation 5s;
 }
 
 /* fin css BenoitCastang pages html et css */
