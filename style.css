@@ -30,6 +30,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  /* position: fixed; */
 }
 nav,
 a {
@@ -449,7 +450,8 @@ textarea {
 
 @keyframes sun-animation {
   100% {
-    transform: translateY(-550px)
+    transform: translateY(-550px);
+    /* background-color: yellow; */
   }
 }
 
@@ -458,7 +460,8 @@ textarea {
   width: 200px;
   border-radius: 50%;
   /* border-radius: 50% / 100% 100% 0% 0%; */
-  background: radial-gradient(orange 30%, yellow);
+  background: radial-gradient(orange 30%, rgb(206, 193, 7));
+  box-shadow: 10px, 10px;
   position: relative;
   top: 75%;
   left: 35%;
@@ -476,6 +479,43 @@ textarea {
   /* animation-iteration-count: infinite; */
 /* } */
 
+canva {
+  background-color: grey;
+  width: 50%;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 0 auto;
+}
+
+#player-one {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  /* font: bold; */
+  margin-top: 5px;
+  text-transform: uppercase;
+  border: 2px solid rgba(0, 0, 200, 0.4);
+  background: rgba(0, 0, 200, 0.3);
+  color: rgba(0, 0, 200, 0.4);
+  box-shadow: 10px 10px 20px rgba(0, 0, 200, 0.4);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-block;
+  cursor: pointer;
+  align-items: center;
+}
+
+#numberGuessingGame {
+  font-family: sans-serif;
+  width: 50%;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 0 auto;
+}
+
+.lastResult {
+  color:white;
+  padding: 3px;
+}
 
 /* fin css BenoitCastang pages html et css */
 

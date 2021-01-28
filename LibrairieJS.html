@@ -30,16 +30,16 @@
     <!-- Bannière -->
     <div id="banniere">
       <img
-        src="img/95cdfeef.webp"
-        alt="Computer keyboard apple"
-        height="480px"
+      src="img/95cdfeef.webp"
+      alt="Computer keyboard apple"
+      height="480px"
       />
     </div>
     <main class="threejs-section">
       <h1>Librairie JavaScript</h1>
 
       <h2>définition</h2>
-
+      
       <p class="lib-p">
         Une bibliothèque <mark>JavaScript</mark> est un fichier .js – parfois
         plusieurs – déjà codé qui met à disposition des méthodes et des
@@ -71,7 +71,7 @@
         des bibliothèques qui sont construites à partir d'autres bibliothèques.
       </p>
       <h1>Présentation de Three.Js</h1>
-
+      
       <p class="lib-p">
         Three.js est une bibliothèque <mark>JavaScript</mark> pour créer des
         scènes 3D dans un navigateur web. Elle peut être utilisée avec la balise
@@ -80,9 +80,9 @@
         accessible à tout le monde, elle permet des rendus en WebGL, CSS3D et
         SVG.
       </p>
-
+      
       <h2>Pour quels résultats?</h2>
-
+      
       <p class="lib-p">Une petite partie de flipper...</p>
 
       <iframe
@@ -90,17 +90,47 @@
         width="100%"
         height="500px"
         frameborder="0"
-      ></iframe>
-
-      <p class="lib-p">...Ou bien essayer une voiture:)</p>
-
-      <iframe
+        ></iframe>
+        
+        <p class="lib-p">...Ou bien essayer une voiture:)</p>
+        
+        <iframe
         src="http://vr.ff.com/us/"
         width="100%"
         height="500px"
         frameborder="0"
-      ></iframe>
-  </main>
+        ></iframe>
+      </main>
+      
+      <p id='player-one'>Comment t'appelles-tu ?</p>
+
+      <div>
+        <canvas id="myDrawing" width="600" height="600"></canvas>
+      </div>
+      <script src="turtle.js"></script>
+      <script src="anim.js"></script>
+      <script src="js.js"></script>
+      
+      <div id='numberGuessingGame'>
+
+        <h1>Number Guessing Game</h1>
+
+        <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+
+        <div class='form'>
+          <label for='guessField'>Enter a guess : </label>
+          <input type='text' id='guessField' class='guessField'>
+          <input type='submit' value='Submit guess' class='guessSubmit'>
+        </div>
+
+        <div class='ResultParas'>
+          <p class='guesses'></p>
+          <p class='lastResult'></p>
+          <p class='lowOrHi'></p>
+        </div>
+
+      </div>
+      
   <footer class="footer">
     <div class="flex">
       <div>
