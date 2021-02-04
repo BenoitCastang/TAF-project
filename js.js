@@ -12,6 +12,7 @@ function square() {
     left(90);
   }
 }  
+
 function squareHexagone() {
     set_pos(200,475);
     set_line_width(5);
@@ -28,13 +29,13 @@ function squareHexagone() {
 canvas.addEventListener('click', squareHexagone);
 
 const para = document.getElementById('player-one');
-// here para = Null
+console.log(para);
 para.addEventListener('click', updateName);
 
 function updateName() {
   let name = prompt('Enter name');
   para.textContent = 'Sois le bienvenu, ' + name + ' !';
-
+}
 // }
 // for() 
 //   CustomElementRegistry;
@@ -52,17 +53,3 @@ function updateName() {
 
 
 
-
-// document.addEventListener('DomContentLoaded', function() {
-//   function createParagraph() {
-//     let para = document.createElement('p');
-//     para.textContent='You clicked the button !';
-//     document.body.appendChild(para);
-//   }
-
-//   const buttons = document.querySelectorAll('button');
-
-//   for(let i = 0; i<buttons.length; i++) {
-//     buttons[i].addEventListener('click', createParagraph);
-//   }
-// });
