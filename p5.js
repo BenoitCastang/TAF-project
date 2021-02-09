@@ -216,7 +216,99 @@ console.log(String.fromCharCode(maVariable)+String.fromCharCode(maVariable-17));
 // console.log(jvc[3]);
 // console.log(jvc[jvc.length -1]);
 
-let nom = 'Risitas';
-let age = 65;
-let arr = [25, 'SALUT', nom, age];
-console.log(arr);
+// let nom = 'Risitas';
+// let age = 65;
+// let passions = ['troll', 'fachospère'];
+// let pseudo = 'pucix69';
+// let arr = [nom, age, passions];
+// arr.push(pseudo);
+// console.log(arr[3]);
+// console.log(arr[2][1]);
+// console.log(arr[2].length);
+// console.log(arr[0].length);
+// console.log(arr[2][1].length);
+// // affect var suppr last arr value
+// var suppr = arr.pop();
+// console.log(suppr);
+// // affect var del first arr value
+// var del = arr.shift();
+// console.log(del);
+// arr.unshift('Hummer');
+// console.log(arr);
+
+// let lastname = 'Risitas';
+// let firstname = 'El';
+// let sentence = [0];
+// sentence.shift();
+// sentence.push(lastname, firstname, lastname[0], firstname[0]);
+// console.log(sentence);
+
+// function moyenne(noteA, noteB) {
+//     return (noteA+noteB)/2;
+// }
+// console.log(moyenne(8, 4));
+// console.log(4 == 5 ? 'oui' : 'non');
+// boule = 4 == 5 ? 'oui' : 'non';
+// console.log(boule); 
+// console.log(3==3 && 3<4);
+// function average(maths, fr, phil) {
+//     let avg = (maths+fr+phil)/3;
+//     return avg>=16 ? 'Mention très bien'
+//         : avg>=14 ? 'Mention bien'
+//         : avg>=12 ? 'Mention assez bien'
+//         : avg<12 ? 'Mention honorable'
+//         : ''
+// }
+// console.log(average(18, 19, 15));
+
+// °Créer une variable voiture, un objet dans lequel on aura 3 propriétés : 
+//      -1 propriété nbCheveaux que l'on initialise avec une valeur (au choix)
+// -1 propriété vitesseMax que l'on initialise avec une valeur (au choix)
+// -1 propriété faiblesse que l'on initialise avec 1 tableau qui contient 2 chaines de caractères
+
+// Ensuite on va faire un console log de l'objet voiture
+// et 
+// un console log qui affiche uniquement la vitesseMax de l'objet voiture
+
+// let myCar = new Object();
+// myCar.maker = 'McLaren';
+// myCar.model = 'formula one';
+// myCar.year = 1982;
+// myCar.pilot = 'Keke Rosberg';
+// myCar.spoilers = ['frontWing', 'rearWing'];
+// console.log(myCar.spoilers[1]);
+// delete myCar.model;
+// // Cette propriété existe-t-elle ?
+// console.log(myCar.hasOwnProperty('pilot'));
+
+// let myCar = {
+//     maker: 'McLaren',
+//     model: 'formula one',
+//     year: 1982,
+//     spoilers: ['frontWing', 'rearWing'],
+//     pilot: {
+//         name: 'Keke Rosberg',
+//         teammate: 'Alain Prost'
+//     }   
+// };        
+        
+// let myCar = new Object();
+// myCar.maker = 'McLaren';
+// myCar.model = 'formula one';
+// myCar.year = 1982;
+// myCar.spoilers = ['frontWing', 'rearWing'];
+// let pilot = new Object();
+// pilot.name = 'Keke Rosberg';
+// pilot.teammate = 'Alain Prost';
+// myCar.pilot = pilot;
+// console.log(myCar.pilot);
+// console.log(myCar.pilot.teammate);
+// delete myCar.model;
+// Cette propriété existe-t-elle ?
+// console.log(myCar.hasOwnProperty('pilot'));
+
+let draw = [];
+for (let i=0 ; i<10 ; i++) {
+    draw.push('#');
+    console.log(draw);
+}
