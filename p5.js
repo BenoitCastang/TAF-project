@@ -307,8 +307,99 @@ console.log(String.fromCharCode(maVariable)+String.fromCharCode(maVariable-17));
 // Cette propriété existe-t-elle ?
 // console.log(myCar.hasOwnProperty('pilot'));
 
-let draw = [];
-for (let i=0 ; i<10 ; i++) {
-    draw.push('#');
-    console.log(draw);
-}
+// let draw = [];
+// for (let i=0 ; i<10 ; i++) {
+//     draw.push('#');
+//     console.log(draw);
+// }
+
+// function average(grades) {
+//     let gradesSum = 0;
+//     for (let gradesNumber=0 ; gradesNumber<grades.length ; gradesNumber++) {
+//         gradesSum += grades[gradesNumber];
+//     }
+//     let avg=gradesSum/grades.length;
+//     return avg;
+// }
+// console.log(average([11,18,14,6]));
+
+// function arrAdd(arr) {
+//     for (let subTabNumber=0 ; subTabNumber<arr.length ; subTabNumber++) {
+//         for (let subTabElement=0 ; subTabElement<arr[subTabNumber].length ; subTabElement++) {
+//             arr[subTabNumber][subTabElement]+=1;
+//         }
+//     }
+//     return arr;
+// }
+// console.log(arrAdd([[10,10],[2,2],[3,3]]));
+
+// function diceProba(dice)
+// for(let diceRoll=0 ; diceRoll<50 ; diceRoll++) {
+//     diceRollOutcome=Math.ceil((Math.random()*6));
+//     if(diceRollOutcome===1) {
+//         diceSide1
+//     }
+// }
+// diceProba([0,0,0,0,0,0]);
+
+// function mix(arr) {
+//     let temp;
+//     let random;
+//     for (let arrNumber=0 ; arrNumber<arr.length ; arrNumber++) {
+//         temp=arr[arrNumber];
+//         random=Math.floor(Math.random()*arr.length);
+//         arr[arrNumber]=arr[random];
+//         arr[random]=temp;
+//     }
+//     return arr;
+// }
+// console.log(mix([1,2,3,4,5,6,7,8,9,10]));
+
+// let array1 = [1, 4, 9, 16];
+// let map1 = array1.map(x => x * 2);
+// console.log(map1);
+
+// map() parcourt un tableau de façon automatique
+// function(nombre){return nombre+1;} est une fonction anonyme, qui fonctionne seulement dans son bloc
+// x => x+1 est une fonction fléché, soit une fonction anonyme ramassée
+// let arr=[0,1,2,3,4];
+// let add1=arr.map(number => number+1);
+// console.log(add1);
+
+let myCar = new Object();
+myCar.maker = 'McLaren';
+// myCar.model = 'formula one';
+myCar.year = 1982;
+myCar.pilot = 'Keke Rosberg';
+myCar.spoilers = ['frontWing', 'rearWing'];
+// condition ternaire : no operator = does var exist or not ?
+let myCarDesc = `My car is ${myCar.model ? myCar.model : '...actually I don\'t own any car,'} baby !`;
+console.log(myCarDesc);
+// allows to use straightly pilot instead of myCar.pilot
+// allows not to do anything to the object
+// year: price gives price new var years value
+// teammate='Alain Prost' creates new var named teammate
+const {maker, year: price, pilot, teammate='Alain Prost'} = myCar;
+console.log(pilot, price, maker, teammate);
+
+const notes = [12, 15, 18];
+const [french, philosophy, maths] = notes;
+console.log(french, philosophy, maths);
+
+// switch values by an array
+// let num1 = 2;
+// let num2 = 4;
+// console.log(num1, num2);
+// [num1, num2] = [num2, num1];
+// console.log(num1, num2);
+// to set a default parameter to a function
+// function sayName(firstname = 'no parameter') {
+//     console.log(firstname);
+// }
+// sayName();
+
+// let arr = [1, 4, 9, 16];
+// const add = arr.map(() => 5);
+// console.log(add);
+
+
