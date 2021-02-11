@@ -85,6 +85,17 @@
 //     }
 // }
 
+function setup() {
+    createCanvas(800, 800);
+    stroke(255);
+    strokeWeight(2);
+    background(0);
+}
+
+function draw() {
+    
+}
+
 // let monTableau = [0, 1, 2, 'A', 'A', 5, 6, 7, 'B', 9];
 // monTableau[0]
 // console.log(monTableau[8]);
@@ -366,25 +377,25 @@ console.log(String.fromCharCode(maVariable)+String.fromCharCode(maVariable-17));
 // let add1=arr.map(number => number+1);
 // console.log(add1);
 
-let myCar = new Object();
-myCar.maker = 'McLaren';
-// myCar.model = 'formula one';
-myCar.year = 1982;
-myCar.pilot = 'Keke Rosberg';
-myCar.spoilers = ['frontWing', 'rearWing'];
-// condition ternaire : no operator = does var exist or not ?
-let myCarDesc = `My car is ${myCar.model ? myCar.model : '...actually I don\'t own any car,'} baby !`;
-console.log(myCarDesc);
-// allows to use straightly pilot instead of myCar.pilot
-// allows not to do anything to the object
-// year: price gives price new var years value
-// teammate='Alain Prost' creates new var named teammate
-const {maker, year: price, pilot, teammate='Alain Prost'} = myCar;
-console.log(pilot, price, maker, teammate);
+// let myCar = new Object();
+// myCar.maker = 'McLaren';
+// // myCar.model = 'formula one';
+// myCar.year = 1982;
+// myCar.pilot = 'Keke Rosberg';
+// myCar.spoilers = ['frontWing', 'rearWing'];
+// // condition ternaire : no operator = does var exist or not ?
+// let myCarDesc = `My car is ${myCar.model ? myCar.model : '...actually I don\'t own any car,'} baby !`;
+// console.log(myCarDesc);
+// // allows to use straightly pilot instead of myCar.pilot
+// // allows not to do anything to the object
+// // year: price gives price new var years value
+// // teammate='Alain Prost' creates new var named teammate
+// const {maker, year: price, pilot, teammate='Alain Prost'} = myCar;
+// console.log(pilot, price, maker, teammate);
 
-const notes = [12, 15, 18];
-const [french, philosophy, maths] = notes;
-console.log(french, philosophy, maths);
+// const notes = [12, 15, 18];
+// const [french, philosophy, maths] = notes;
+// console.log(french, philosophy, maths);
 
 // switch values by an array
 // let num1 = 2;
