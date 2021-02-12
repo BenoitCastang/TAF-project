@@ -72,18 +72,46 @@
 //     strokeWeight(2);
 //     background(0);
 // }
-
+// let a;
+// a=0;
 // function draw() {
-//     noFill();
+//     a+=1;
+//     fill(0,a%256,0);
+//     // console.log(floor(a/256),a%256);
 //     if(mouseY>=400) {
 //         background(0);
 //         ellipse(400, 400, mouseX, mouseX);
 //     } 
 //     if(mouseY<400) {
 //         background(0);
-//         square(350-mouseX, 350-mouseX, mouseX);
+//         square(400-mouseX/2, 400-mouseX/2, mouseX);
 //     }
 // }
+
+function setup() {
+    createCanvas(800, 800);
+    stroke(255);
+    strokeWeight(2);
+    background(0);
+}
+
+let ellX=400;
+let ellY=400;
+function draw() {
+    noFill();
+    ellipse(ellX,ellY,50,100);
+    ellipse(ellX,ellY,100,50);
+    ellipse(ellX,ellY,50,50);
+    ellipse(ellX,ellY,100,100);
+    ellX+=200;
+    ellY+=200;
+    if(ellX>600) {
+        ellX=200;
+    }
+    if(ellY>600) {
+        ellY=200;
+    }
+}
 
 // let monTableau = [0, 1, 2, 'A', 'A', 5, 6, 7, 'B', 9];
 // monTableau[0]
@@ -366,25 +394,25 @@ console.log(String.fromCharCode(maVariable)+String.fromCharCode(maVariable-17));
 // let add1=arr.map(number => number+1);
 // console.log(add1);
 
-let myCar = new Object();
-myCar.maker = 'McLaren';
-// myCar.model = 'formula one';
-myCar.year = 1982;
-myCar.pilot = 'Keke Rosberg';
-myCar.spoilers = ['frontWing', 'rearWing'];
-// condition ternaire : no operator = does var exist or not ?
-let myCarDesc = `My car is ${myCar.model ? myCar.model : '...actually I don\'t own any car,'} baby !`;
-console.log(myCarDesc);
-// allows to use straightly pilot instead of myCar.pilot
-// allows not to do anything to the object
-// year: price gives price new var years value
-// teammate='Alain Prost' creates new var named teammate
-const {maker, year: price, pilot, teammate='Alain Prost'} = myCar;
-console.log(pilot, price, maker, teammate);
+// let myCar = new Object();
+// myCar.maker = 'McLaren';
+// // myCar.model = 'formula one';
+// myCar.year = 1982;
+// myCar.pilot = 'Keke Rosberg';
+// myCar.spoilers = ['frontWing', 'rearWing'];
+// // condition ternaire : no operator = does var exist or not ?
+// let myCarDesc = `My car is ${myCar.model ? myCar.model : '...actually I don\'t own any car,'} baby !`;
+// console.log(myCarDesc);
+// // allows to use straightly pilot instead of myCar.pilot
+// // allows not to do anything to the object
+// // year: price gives price new var years value
+// // teammate='Alain Prost' creates new var named teammate
+// const {maker, year: price, pilot, teammate='Alain Prost'} = myCar;
+// console.log(pilot, price, maker, teammate);
 
-const notes = [12, 15, 18];
-const [french, philosophy, maths] = notes;
-console.log(french, philosophy, maths);
+// const notes = [12, 15, 18];
+// const [french, philosophy, maths] = notes;
+// console.log(french, philosophy, maths);
 
 // switch values by an array
 // let num1 = 2;
@@ -400,6 +428,5 @@ console.log(french, philosophy, maths);
 
 // let arr = [1, 4, 9, 16];
 // const add = arr.map(() => 5);
-// console.log(add);
-
+// console.log(add); 
 
