@@ -88,30 +88,30 @@
 //     }
 // }
 
-function setup() {
-    createCanvas(800, 800);
-    stroke(255);
-    strokeWeight(2);
-    background(0);
-}
+// function setup() {
+//     createCanvas(800, 800);
+//     stroke(255);
+//     strokeWeight(2);
+//     background(0);
+// }
 
-let ellX=400;
-let ellY=400;
-function draw() {
-    noFill();
-    ellipse(ellX,ellY,50,100);
-    ellipse(ellX,ellY,100,50);
-    ellipse(ellX,ellY,50,50);
-    ellipse(ellX,ellY,100,100);
-    ellX+=200;
-    ellY+=200;
-    if(ellX>600) {
-        ellX=200;
-    }
-    if(ellY>600) {
-        ellY=200;
-    }
-}
+// let ellX=400;
+// let ellY=400;
+// function draw() {
+//     noFill();
+//     ellipse(ellX,ellY,50,100);
+//     ellipse(ellX,ellY,100,50);
+//     ellipse(ellX,ellY,50,50);
+//     ellipse(ellX,ellY,100,100);
+//     ellX+=200;
+//     ellY+=200;
+//     if(ellX>600) {
+//         ellX=200;
+//     }
+//     if(ellY>600) {
+//         ellY=200;
+//     }
+// }
 
 // let monTableau = [0, 1, 2, 'A', 'A', 5, 6, 7, 'B', 9];
 // monTableau[0]
@@ -430,3 +430,87 @@ console.log(String.fromCharCode(maVariable)+String.fromCharCode(maVariable-17));
 // const add = arr.map(() => 5);
 // console.log(add); 
 
+// function lastChildDisplay(arr) {
+//     console.log(arr[arr.length-1]);
+// }
+// lastChildDisplay([2,8,6,4,2,3,7,4,1]);
+
+// function lastChildReturn(arr) {
+//     return arr[arr.length-1];
+// }
+// console.log(lastChildReturn([2,8,6,4,2,3]));
+
+// function minReturn(arr) {
+//     for(let arrElement=0 ; arrElement<arr.length ; arrElement++) {
+//             for(let arrElementSubCount=0 ; arrElementSubCount<arr.length ; arrElementSubCount++) {
+//                 if(arr[arrElement]<arr[arrElementSubCount%arr.length]) {
+//                     console.log('arr[arrElement] = '+arr[arrElement]);
+//                     console.log('arr[arrElementSubCount%arr.length] = '+arr[arrElementSubCount%arr.length]);
+//                     return arr[arrElement];
+//                 }
+//             }
+//     }
+// }
+
+// function minReturn(arr) {
+//     let min = arr[0];
+//     for(let i=1 ; i<arr.length ; i++) {
+//         if(arr[i]<min) {
+//             min = arr[i];
+//         }
+//     }
+//     return min;
+// }
+// console.log('value returned = '+minReturn([5,7,2,8,1,4,5,2,3]));
+
+// function maxReturn(arr) {
+//     let max = arr[0];
+//     for(let i=1 ; i<arr.length ; i++) {
+//         if(arr[i]>max) {
+//             max = arr[i];
+//         }
+//     }
+//     return max;
+// }
+// console.log('value returned = '+maxReturn([5,7,2,8,1,4,5,2,3]));
+
+// function secondMaxReturn(arr) {
+//     let max = arr[0];
+//     let max2 = arr[1];
+//     for(let i=1 ; i<arr.length ; i++) {
+//         if(arr[i]>max) {
+//             max2 = max;
+//             max = arr[i];
+//         }
+//         else if(arr[i]>max2) {
+//             max2 = arr[i];
+//         }
+//     }
+//     return max2;
+// }
+// console.log(secondMaxReturn([5,14,1,42,42,422,2,25]));
+
+function howMany(arr,num) {
+    let count=0;
+    for(let i=0 ; i<arr.length ; i++) {
+        if(arr[i]===num) {
+            count+=1;
+        }
+    }
+    return count;
+}
+// console.log(howMany([5,14,42,25,42,42,422,2,25],25));
+
+// function doesNumExist(arr,num) {
+//     for(let i=0 ; i<arr.length ; i++) {
+//         if(arr[i]===num) {
+//             return true;
+//         }
+//     }
+// }
+// console.log(doesNumExist([5,14,42,25,42,42,422,2,25],25));
+
+function doesNumExist(arr,num) {
+    return howMany(arr,num)>0;
+}
+console.log(doesNumExist([5,14,42,25,42,42,422,2,25],24));
