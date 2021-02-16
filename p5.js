@@ -400,15 +400,27 @@ console.log(String.fromCharCode(maVariable)+String.fromCharCode(maVariable-17));
 // myCar.year = 1982;
 // myCar.pilot = 'Keke Rosberg';
 // myCar.spoilers = ['frontWing', 'rearWing'];
+
+// let myCar2 = new Object();
+// myCar2.maker = 'McLaren';
+// // myCar.model = 'formula one';
+// myCar2.year = 1982;
+// myCar2.pilot = 'Keke Rosberg';
+// myCar2.spoilers = ['frontWing', 'rearWing'];
 // // condition ternaire : no operator = does var exist or not ?
-// let myCarDesc = `My car is ${myCar.model ? myCar.model : '...actually I don\'t own any car,'} baby !`;
-// console.log(myCarDesc);
+// // let myCarDesc = `My car is ${myCar.model ? myCar.model : '...actually I don\'t own any car,'} baby !`;
+// // console.log(myCarDesc);
 // // allows to use straightly pilot instead of myCar.pilot
 // // allows not to do anything to the object
 // // year: price gives price new var years value
 // // teammate='Alain Prost' creates new var named teammate
-// const {maker, year: price, pilot, teammate='Alain Prost'} = myCar;
-// console.log(pilot, price, maker, teammate);
+// // const {maker, year: price, pilot, teammate='Alain Prost'} = myCar;
+// // console.log(pilot, price, maker, teammate);
+// let arr = ['jose',8,'Guy',5,8,6,3];
+// const list = [{...myCar2}, {...myCar}];
+// const [num1,num2, ...ennemies] = arr;
+// console.log(num2);
+// console.log(5**2);
 
 // const notes = [12, 15, 18];
 // const [french, philosophy, maths] = notes;
@@ -490,15 +502,17 @@ console.log(String.fromCharCode(maVariable)+String.fromCharCode(maVariable-17));
 // }
 // console.log(secondMaxReturn([5,14,1,42,42,422,2,25]));
 
-function howMany(arr,num) {
-    let count=0;
-    for(let i=0 ; i<arr.length ; i++) {
-        if(arr[i]===num) {
-            count+=1;
-        }
-    }
-    return count;
-}
+// function howMany(arr,num) {
+//     let count=0;
+//     for(let i=0 ; i<arr.length ; i++) {
+//         if(arr[i]===num) {
+//             count+=1;
+//         }
+//         if(arr[i]>num)
+//         return count;
+//     }
+// }
+
 // console.log(howMany([5,14,42,25,42,42,422,2,25],25));
 
 // function doesNumExist(arr,num) {
@@ -510,7 +524,53 @@ function howMany(arr,num) {
 // }
 // console.log(doesNumExist([5,14,42,25,42,42,422,2,25],25));
 
-function doesNumExist(arr,num) {
-    return howMany(arr,num)>0;
-}
-console.log(doesNumExist([5,14,42,25,42,42,422,2,25],24));
+// function doesNumExist(arr,num) {
+//     return howMany(arr,num)>0;
+// }
+// console.log(doesNumExist([5,14,42,25,42,42,422,2,25],24));
+
+// function getElementFromOrderedArray(arr,num) {
+//     for(let i=0 ; i<arr.length ; i++) {
+//         if(arr[i]===num) {
+//             return true;
+//         }
+//         if(arr[i]>num) {
+//             return false;
+//         }
+//     }   
+//     return false;
+// }
+// console.log(getElementFromOrderedArray([14,20,25,50,60],70));
+
+// Tour de Hanoi : https://www.mathsisfun.com/games/towerofhanoi.html
+// Il y a 3 tours, et des disques sur l'une d'entre elles. On ne peut déplacer qu'un seul disque à la fois, et on ne peut pas placer un disque sur un autre plus petit.
+
+// Le but est d'écrire une fonction qui **affiche dans la console** la solution de ce problème.
+// Exemple avec le code (obfusqué) plus bas :
+
+
+
+// hanoi(3,"un","trois","deux"); // Je demande : comment déplacer 3 disques de la tour "un" vers la tour "trois", avec la tour "deux" en intermédiaire.
+/*
+
+     |            |            |
+     |            |            |
+     |            |            |
+    -|-           |            |
+   --|--          |            |
+  ---|---         |            |
+=====|=====  =====|=====  =====|=====
+    un          deux         trois
+*/
+// Résultat (dans la console) :
+// Déplacer de un vers trois
+// Déplacer de un vers deux
+// Déplacer de trois vers deux
+// Déplacer de un vers trois
+// Déplacer de deux vers un
+// Déplacer de deux vers trois
+// Déplacer de un vers trois
+
+//DOM = Document Object Model
+
+console.log(document.html);
