@@ -4,14 +4,14 @@
 // const id = document.getElementById('firstParagraph');
 // console.log(id);
 
-const title = document.getElementById('title');
+// const title = document.getElementById('title');
 // console.log(title);
 // const txt = 
 
-const par = document.getElementsByTagName('p');
-console.log(par);
+// const par = document.getElementsByTagName('p');
+// console.log(par);
 
-const par1 = document.getElementById('firstParagraph');
+// const par1 = document.getElementById('firstParagraph');
 
 // for(let i=0 ; i<par.length ; i++) {
 //     console.log(par[i]);
@@ -32,29 +32,53 @@ const par1 = document.getElementById('firstParagraph');
 // function addTxt(pseudo,txt) {
 //     const newPar = document.createElement('p');
 //     newPar.innerHTML=`<strong>${pseudo}</strong> ${txt}`;
+//     // newPar.innerHTML+=" So he's happy now.";
+
 //     // const newPseudo = document.createTextNode(pseudo);
 //     // const newTxt = document.createTextNode(txt);
 //     // newPar.appendChild(newPseudo);
 //     // newPar.appendChild(newTxt);
 //     document.body.appendChild(newPar);
-//     // newPar.innerHTML+=" So he's happy now.";
+
 // }
 
 // addTxt('Porcellino', 'has left the chat.');
 
-// EXO DOM 9
-// Setup de la page côté html
-// 1 titre , 2 paragraphes, dans le second p on rajoute un lien qui renvoi vers "#"
+// const a = document.getElementsByTagName('a')[0];
+// const link = a.getAttribute('href');
+// console.log(link);
+// a.setAttribute('href','https://www.youtube.com/watch?v=KDmiID_iLTE&t=77s&ab_channel=MotorSports');
 
-// En js 
-// On a toujours nos variables titre et txt
-// On récupère le lien de notre page dans une variable "lien"
-// On console log ce que contient l'attribut href de notre lien 
-// (voir la fonction getAttribute())
+// ap pour modifier tous les innierHTML de txt en "LOL HACKED"
 
-// Ensuite on modifie l'attribut href de notre lien avec la fonction setAttribute()
-// (mettre un lien au choix)(modifié)
-const a = document.getElementsByTagName('a')[0];
-const link = a.getAttribute('href');
-console.log(link);
-a.setAttribute('href','https://www.youtube.com/watch?v=KDmiID_iLTE&t=77s&ab_channel=MotorSports');
+// fonction fléchée + fonction anonyme
+// console.log(Array.from([1,2,3], x => x*x));
+
+// create array of paragraphs
+// const txtArr = Array.from(par);
+// console.log(txtArr);
+
+// replace all by new txt
+// txtArr.map(x => x.innerHTML = `LOL jvc t'a hacké`);
+const title = document.querySelector('#title');
+console.log(title);
+
+title.style.width = '150px';
+title.style.display = 'flex';
+title.style.flexDirection = 'column';
+title.style.alignItems = 'center';
+title.style.paddingLeft = '10px';
+title.style.border = 'solid 1px';
+title.style.boxShadow = '5px 5px 7px red';
+
+// console.log(`Title element's box is ${title.clientHeight} pixels of height.`);
+// console.log(`Title element's box is ${title.clientWidth} pixels of width.`);
+// console.log(`Title element's box is ${title.offsetHeight} pixels of width including border.`);
+// console.log(`Title element's box is ${title.offsetWidth} pixels of width including border.`);
+title.style.color = 'red';
+
+const par = document.querySelector('p');
+// select a defined element
+const allPar = document.querySelectorAll('p')[1];
+console.log(par);
+console.log(allPar);
