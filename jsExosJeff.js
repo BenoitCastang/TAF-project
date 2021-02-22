@@ -217,16 +217,71 @@
 
 // }, 2000);
 
+// let textArea = document.querySelector('textarea');
+// // si on rentre un paramètre il prend la valeur de l'événement
+// textArea.addEventListener('keyup',function(event) {
+//     let textAreaArray = Array.from(event.key);
+//     // console.log(textAreaArray.includes('b','c'));
+//     if(textAreaArray.includes('a')===true || textAreaArray.includes('e')===true ||
+//     textAreaArray.includes('i')===true || textAreaArray.includes('o')===true ||
+//     textAreaArray.includes('u')===true || textAreaArray.includes('y')===true) {
+//         console.log('user entered vowel');
+//     }
+//     else;
+// });
+
+// bar displaying scrolling statey
+// scrollHeight = document.querySelector('#superScroll').scrollHeight;
+// let bar = document.querySelector('.bar');
+// document.addEventListener('scroll', function(event){
+//     let scrollMax = scrollHeight-innerHeight;
+//     let whereAreWe = (pageYOffset/scrollMax)*100;
+//     bar.style.width = whereAreWe+'%';
+// });
+
+// let title = document.querySelector('#title');
+// let timer = 3;
+// title.value = timer;
+// title.addEventListener('click', function() {
+//         let countDown = setInterval(function(){
+//             title.innerHTML = timer--;
+//             if(timer<0) {
+//                 title.innerHTML = 'Green green green';
+//             };
+//         },1000);
+// });
+
+// let myForm = document.querySelector('fieldset');
+// let button = document.querySelector('button');
+// button.addEventListener('click', function(event) {
+//     event.preventDefault();
+//     console.log('OK');
+//     myForm.reset;
+// })
+
+// let myText = document.querySelector('textarea');
+// let div = document.querySelector('div');
+// myText.addEventListener('keyup',function(event) {
+//     div.innerHTML = marked(myText.value);
+// });
+
 let textArea = document.querySelector('textarea');
-// si on rentre un paramètre il prend la valeur de l'événement
+let div = document.getElementsByTagName('div');
+localStorage.removeItem('value');
 textArea.addEventListener('keyup',function(event) {
-    let textAreaArray = Array.from(event.key);
-    // console.log(textAreaArray.includes('b','c'));
-    if(textAreaArray.includes('a')===true || textAreaArray.includes('e')===true ||
-    textAreaArray.includes('i')===true || textAreaArray.includes('o')===true ||
-    textAreaArray.includes('u')===true || textAreaArray.includes('y')===true) {
-        console.log('user entered vowel');
-    }
-    else;
+    window.localStorage.setItem('text',textArea.value);
 });
 
+// localStorage.clear();
+// window.localStorage.value = 'ssgdst';
+
+// console.log(window.localStorage.value);
+// console.log(window.localStorage.length);
+// console.log(localStorage);
+window.alert.sert
+console.log(window);
+console.log(div);
+
+// let myStorage = window.localStorage;
+// console.log(myStorage);
+// console.log(window);
