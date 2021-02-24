@@ -3,7 +3,7 @@
     background-color: red;
 } */
 
-/* #superScroll {
+#superScroll {
     min-height: 5000px;
 }
 
@@ -19,7 +19,12 @@
     height: 20px;
     background-color: royalblue;
     width: 0%;
+}
+/* #lecture {
+    position: absolute;
+    text-align: center;
 } */
+
 /* 
 #startScreen {
     cursor: pointer;
@@ -35,7 +40,7 @@
     right: 25%;
     width: 50%;
     text-align: center;
-} */
+}
 
 fieldset {
     position: relative;
