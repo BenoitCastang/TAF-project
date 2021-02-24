@@ -217,16 +217,17 @@
 
 // }, 2000);
 
-let textArea = document.querySelector('textarea');
-// si on rentre un paramètre il prend la valeur de l'événement
-textArea.addEventListener('keyup',function(event) {
-    let textAreaArray = Array.from(event.key);
-    // console.log(textAreaArray.includes('b','c'));
-    if(textAreaArray.includes('a')===true || textAreaArray.includes('e')===true ||
-    textAreaArray.includes('i')===true || textAreaArray.includes('o')===true ||
-    textAreaArray.includes('u')===true || textAreaArray.includes('y')===true) {
-        console.log('user entered vowel');
-    }
-    else;
-});
-
+// let textArea = document.querySelector('textarea');
+// // si on rentre un paramètre il prend la valeur de l'événement
+// textArea.addEventListener('keyup',function(event) {
+//     let textAreaArray = Array.from(event.key);
+//     // console.log(textAreaArray.includes('b','c'));
+//     if(textAreaArray.includes('a')===true || textAreaArray.includes('e')===true ||
+//     textAreaArray.includes('i')===true || textAreaArray.includes('o')===true ||
+//     textAreaArray.includes('u')===true || textAreaArray.includes('y')===true) {
+//         console.log('user entered vowel');
+//     }
+//     else;
+// });
+let x = 50;
+console.log((x-1)**2+x**2+(x+1)**2);
