@@ -450,52 +450,45 @@
 // Bilan PME
 // ----------------------------------------------
 
-class Employee {
-    constructor(firstName,lastName,monthsWorked,wedge) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.monthsWorked = monthsWorked;
-        this.wedge = wedge;
-    }
-    totalWedgePerEmployee() {
-        let totalWedge = this.monthsWorked*this.wedge;
-        return totalWedge;
-    }    
-}
+// class Employee {
+//     constructor(firstName,lastName,monthsWorked,wedge) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.monthsWorked = monthsWorked;
+//         this.wedge = wedge;
+//     }
+//     totalWedgePerEmployee() {
+//         let totalWedge = this.monthsWorked*this.wedge;
+//         return totalWedge;
+//     }    
+// }
 
-class Company {
-    constructor(name,team,sales,taxes,material) {
-        this.name = name;
-        this.team = team;
-        this.sales = sales;
-        this.taxes = taxes;
-        this.material = material;
-    }
-    balanceSheet() {
-        let balanceSheet = 0;
-        let subBalanceSheet = 0;
-        for(const employee of this.team) {
-            for(const property in employee) {
-                subBalanceSheet += employee.totalWedgePerEmployee();
-                // console.log(subBalanceSheet);
-                // return subBalanceSheet;
-            }
-            console.log(subBalanceSheet/4);
-        }
-    }       
-}
+// class Company {
+//     constructor(name,team,sales,taxes,material) {
+//         this.name = name;
+//         this.team = team;
+//         this.sales = sales;
+//         this.taxes = taxes;
+//         this.material = material;
+//     }
+//     balanceSheet() {
+//         let balanceSheet = 0;
+//         for(const employee of this.team) {
+//             balanceSheet += employee.totalWedgePerEmployee();
+//         }
+//     }       
+// }
 
-let myCompany = new Company(
-    'myCompany',
-    [new Employee('Benoît','C',30,2000),
-    new Employee('Vanessa','P',30,3000),
-    new Employee('Jeff','P',40,4000)],
-    300000,
-    20000,
-    10000
-)
+// let myCompany = new Company(
+//     'myCompany',
+//     [new Employee('Benoît','C',30,2000),
+//     new Employee('Vanessa','P',30,3000),
+//     new Employee('Jeff','P',40,4000)],
+//     300000,
+//     20000,
+//     10000
+// )
 
-console.log(myCompany.balanceSheet());
 // console.log(myCompany);
 
 // let bastien = new Employee('Bastien','C',30,2000);
@@ -539,3 +532,4 @@ console.log(myCompany.balanceSheet());
 // }
 
 // ---------------------
+
