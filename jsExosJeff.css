@@ -1,4 +1,51 @@
 /* .myColor {
-    color: white;
+    color: white
     background-color: red;
 } */
+
+#superScroll {
+    min-height: 5000px;
+}
+
+.boxBar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: solid 5px royalblue;
+}
+
+.bar {
+    height: 20px;
+    background-color: royalblue;
+    width: 0%;
+}
+/* #lecture {
+    position: absolute;
+    text-align: center;
+} */
+
+/* 
+#startScreen {
+    cursor: pointer;
+    position: relative;
+    left: 25%;
+    right: 25%;
+    border: solid 1px;
+    width: 50%;
+}
+#title {
+    position: relative;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+fieldset {
+    position: relative;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    text-align: center;
+}

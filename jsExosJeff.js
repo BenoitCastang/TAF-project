@@ -229,5 +229,307 @@
 //     }
 //     else;
 // });
-let x = 50;
-console.log((x-1)**2+x**2+(x+1)**2);
+
+// bar displaying scrolling statey
+// scrollHeight = document.querySelector('#superScroll').scrollHeight;
+// let bar = document.querySelector('.bar');
+// document.addEventListener('scroll', function(event){
+//     let scrollMax = scrollHeight-innerHeight;
+//     let whereAreWe = (pageYOffset/scrollMax)*100;
+//     bar.style.width = whereAreWe+'%';
+// });
+
+// let title = document.querySelector('#title');
+// let timer = 3;
+// title.value = timer;
+// title.addEventListener('click', function() {
+//         let countDown = setInterval(function(){
+//             title.innerHTML = timer--;
+//             if(timer<0) {
+//                 title.innerHTML = 'Green green green';
+//             };
+//         },1000);
+// });
+
+// let myForm = document.querySelector('fieldset');
+// let button = document.querySelector('button');
+// button.addEventListener('click', function(event) {
+//     event.preventDefault();
+//     console.log('OK');
+//     myForm.reset;
+// })
+
+// let myText = document.querySelector('textarea');
+// let div = document.querySelector('div');
+// myText.addEventListener('keyup',function(event) {
+//     div.innerHTML = marked(myText.value);
+// });
+
+// let textArea = document.querySelector('textarea');
+// let div = document.querySelector('div');
+// textArea.value = localStorage.getItem('myText');
+// localStorage.removeItem('myText');
+// if (textArea.value) {
+    //     div.innerHTML = marked(localStorage.getItem('myText'));
+//     // }
+// textArea.addEventListener('keyup',function(event) {
+//     window.localStorage.setItem('myText',textArea.value);
+//     div.innerHTML = marked(textArea.value);
+// });
+// console.log(textArea.value);
+    // console.log(window);
+
+
+// localStorage.clear();
+// window.localStorage.value = 'ssgdst';
+
+// console.log(window.localStorage.value);
+// console.log(window.localStorage.length);
+// console.log(localStorage);
+// window.alert.sert
+// console.log(window);
+// console.log(div);
+
+// let myStorage = window.localStorage;
+// console.log(myStorage);
+// console.log(window);
+// let a = 5;
+// let b = 2;
+// let c = 3;
+// let re = /ab+c/; /* OR */ let regex = new RegExp('ab+c')
+// console.log();
+
+// ----------------------------------------------------
+// CLASS
+// ----------------------------------------------------
+
+// let myCar = new Object();
+// myCar.maker = 'McLaren';
+// myCar.model = 'formula one';
+// myCar.year = 1982;
+// myCar.pilot = 'Keke Rosberg';
+// myCar.spoilers = ['frontWing', 'rearWing'];
+// console.log(myCar.spoilers[1]);
+// delete myCar.model;
+// // Cette propriété existe-t-elle ?
+// console.log(myCar.hasOwnProperty('pilot'));
+
+// let myCar = {
+//     maker: 'McLaren',
+//     model: 'formula one',
+//     year: 1982,
+//     spoilers: ['frontWing', 'rearWing'],
+//     pilot: {
+//         name: 'Keke Rosberg',
+//         teammate: 'Alain Prost'
+//     }   
+// };        
+        
+// let myCar = new Object();
+// myCar.maker = 'McLaren';
+// myCar.model = 'formula one';
+// myCar.year = 1982;
+// myCar.spoilers = ['frontWing', 'rearWing'];
+// let pilot = new Object();
+// pilot.name = 'Keke Rosberg';
+// pilot.teammate = 'Alain Prost';
+// myCar.pilot = pilot;
+// console.log(myCar.pilot);
+// console.log(myCar.pilot.teammate);
+// delete myCar.model;
+// Cette propriété existe-t-elle ?
+// console.log(myCar.hasOwnProperty('pilot'));
+
+// class Rectangle {
+//   constructor(name, height, width) {
+//     this.name = name;
+//     this.height = height;
+//     this.width = width;
+//   }
+// }
+
+// Exos classes
+
+// // var myRectangle1 = new Rectangle('myRectangle1',10,20);
+
+// // var myRectangle2 = new Rectangle();
+// // myRectangle2.name = 'myRectangle2';
+// // myRectangle2.height = 5;
+// // myRectangle2.width = 15;
+
+
+// // console.log(new Rectangle('myRectangle1',10,20));
+// // console.log(myRectangle2);
+
+// class Empty {}
+// var myEmpty = new Empty;
+// myEmpty.name = 'empty1';
+// console.log(myEmpty);
+
+// // // console.log(Rectangle.height);
+// // // console.log(Car);
+// // // console.log(RegExp);
+
+
+// class User {
+//     constructor(name,age,email) {
+//         this.name = name;
+//         this.age = age;
+//         this.email = email;
+//     }
+// }
+
+// let user1 = new User('user1',17,'user1@gmail.com');
+// console.log(user1);
+
+// class Car {
+//     constructor() {
+//         this.engineIsRunning = false;
+//     }
+//     startEngine() {
+//         this.engineIsRunning = true;
+//     }
+// }
+
+// const myCar1 = new Car;
+// // myCar1.startEngine();
+// console.log(myCar1);
+
+// class Color extends Car {
+    
+// }
+
+// const myColor1 = new Color;
+// // myCar1.startEngine();
+// console.log(myCar1);
+
+// ------------------------
+// Calcul IMC
+// ------------------------
+// class IMC {
+//     constructor(name,weight,height) {
+//         this.name = name;
+//         this.weight = weight;
+//         this.height = height;
+//     }
+//     imc() {
+//         let imc = (this.weight/this.height**2).toFixed(2);
+//         return imc;
+//     }
+//     display() {
+//         console.log(`${this.name} a un IMC de ${(this.weight/(this.height**2)).toFixed(0)}`);
+//     }
+// }
+
+// let benoitIMC = new IMC('Benoît',95,1.85);
+// let vanessaIMC = new IMC('Vanessa',25,1.90);
+// let jeffIMC = new IMC('Jeff',200,1.20);
+// let arr = [vanessaIMC,jeffIMC];
+// const arrDisplay = arr.forEach(x => x.display());
+// const arrDisplay = arr.map(x => x.display());
+
+// --------------------------------------------
+
+// Arrondir = toFixed()
+// console.log((1.4554631).toFixed(0));
+// let str = 'string';
+// let str2 = str;
+// str2.forEach(x => a);
+// console.log(str2);
+// console.log(String);
+// console.log(Map);
+// let array = new Array;
+// console.log(array);
+// console.log(Boolean);
+// let string = new String;
+// console.log(string);
+// let boolean = new Boolean;
+// console.log(boolean);
+
+// ----------------------------------------------
+// Bilan PME
+// ----------------------------------------------
+
+// class Employee {
+//     constructor(firstName,lastName,monthsWorked,wedge) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.monthsWorked = monthsWorked;
+//         this.wedge = wedge;
+//     }
+//     totalWedgePerEmployee() {
+//         let totalWedge = this.monthsWorked*this.wedge;
+//         return totalWedge;
+//     }    
+// }
+
+// class Company {
+//     constructor(name,team,sales,taxes,material) {
+//         this.name = name;
+//         this.team = team;
+//         this.sales = sales;
+//         this.taxes = taxes;
+//         this.material = material;
+//     }
+//     balanceSheet() {
+//         let balanceSheet = 0;
+//         for(const employee of this.team) {
+//             balanceSheet += employee.totalWedgePerEmployee();
+//         }
+//     }       
+// }
+
+// let myCompany = new Company(
+//     'myCompany',
+//     [new Employee('Benoît','C',30,2000),
+//     new Employee('Vanessa','P',30,3000),
+//     new Employee('Jeff','P',40,4000)],
+//     300000,
+//     20000,
+//     10000
+// )
+
+// console.log(myCompany);
+
+// let bastien = new Employee('Bastien','C',30,2000);
+// console.log(bastien.totalWedgePerEmployee());
+// for (const property in bastien) {
+//     console.log(`${property}: ${bastien[property]}`);
+// }
+// // let bastienWedge = 0;
+// for(const property in bastien) {
+//     // bastienWedge += bastien.wedge;
+//     console.log(bastien.monthsWorked*bastien.wedge);
+// }
+
+// let marwa = new Employee('Marwa','C',20,4000);
+// for (const property in marwa) {
+//     console.log(`${property}: ${marwa[property]}`);
+// }
+
+// let list = [bastien,marwa];
+// console.log(list);
+// let wedgeSum = 0;
+// for(element of list) {
+//     // console.log(element.wedge);
+//     wedgeSum += element.wedge;
+// }
+// console.log(wedgeSum);
+
+// --------------------
+// for...of (arrays) et for...in (objects)
+// --------------------
+
+// const array1 = ['a', 'b', 'c'];
+// for (const element of array1) {
+//   console.log(element);
+// }
+
+// const object = { a: 1, b: 2, c: 3 };
+// console.log(object);
+// for (const property in object) {
+//     console.log(`${property}: ${object[property]}`);
+// }
+
+// ---------------------
+
