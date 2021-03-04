@@ -1,0 +1,11 @@
+canvas { 
+    background: rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+    border: solid 1px;
+    width: 500px;
+    height: 300px;
+}
+p {
+    text-align: center;
+}
