@@ -1,3 +1,4 @@
 # TAF-project
 
-1er test travail en équipe: template site vitrine 
+This is my first training team project.
+Js section was my js exercizing place.
