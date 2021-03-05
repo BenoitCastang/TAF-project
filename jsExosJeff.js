@@ -533,47 +533,83 @@
 
 // ---------------------
 
-class Car {
-  constructor(color,engine) {
-    this._color = color;
-    this.km = 0;
-    this.engine = engine;
-  }
-    start(distance) {
-        this.km += distance;
-        return this.km;
+// ---------------------------------------------
+// GETTERS AND SETTERS
+// ---------------------------------------------
+
+// class Car {
+//   constructor(color,engine) {
+//     this._color = color;
+//     this.km = 0;
+//     this.engine = engine;
+//   }
+//     start(distance) {
+//         this.km += distance;
+//         return this.km;
+//     }
+//     brake(){
+//         return true;
+//     }
+//     goBack(backDistance) {
+//         this.km -= backDistance;
+//         return this.km;
+//     }
+//     startThenGoBack(distance,backDistance) {
+//         this.start(distance);
+//         this.goBack(backDistance);
+//         return this.km;
+//     }
+//     display() {
+//         document.write(`The car is ${this.color} and has travelled ${this.km}km so far thanks to its fantastic ${this.engine} engine.`);
+//     }
+//     get color() {
+//         return this._color;
+//     }
+//     set color(newColor) {
+//         if(newColor != 'pink') {
+//             this._color = newColor;
+//         }
+//         else {
+//             document.write('wrong color !');
+//             this._color = 'black';
+//         }
+//     }
+//   }
+// const ferrari = new Car('red','V8 Cosworth');
+// const maseratti = new Car('black','V12 hybrid');
+// // document.write(`The Ferrari travelled ${ferrari.startThenGoBack(5,3)}km. <br />`);
+// // document.write(`The Maseratti travelled ${maseratti.startThenGoBack(7,1)}km. <br />`);
+
+// ferrari.color = "pink";
+// console.log(ferrari.color);
+
+class Student {
+    constructor(age) {
+        this._age = age;
+        this._iq = false;
     }
-    brake(){
-        return true;
-    }
-    goBack(backDistance) {
-        this.km -= backDistance;
-        return this.km;
-    }
-    startThenGoBack(distance,backDistance) {
-        this.start(distance);
-        this.goBack(backDistance);
-        return this.km;
-    }
-    display() {
-        document.write(`The car is ${this.color} and has travelled ${this.km}km so far thanks to its fantastic ${this.engine} engine.`);
-    }
-    get color() {
-        return this._color;
-    }
-    set color(newColor) {
-        if(newColor != 'pink') {
-            this._color = newColor;
+    iqDecrease() {
+        if(this._age <= 10) {
+            return true
         }
         else {
-            document.write('wrong color');
-            this._color = 'black';
+            return false;
         }
     }
-  }
-const ferrari = new Car('red','V8 Cosworth');
-const maseratti = new Car('black','V12 hybrid');
-document.write(`The Ferrari travelled ${ferrari.startThenGoBack(5,3)}km. <br />`);
-document.write(`The Maseratti travelled ${maseratti.startThenGoBack(7,1)}km.`);
+    get age() {
+        return this._age;
+    }
+    set age(newAge) {
+        if(newAge >= 18) {
+            this._age = newAge;
+        }
+        else {
+            document.write('too young to study !');
+        }
+    }
+}
 
-console.log(ferrari.color());
+let student1 = new Student(10);
+student1.age = 17;
+console.log(student1.age);
+console.log(student1.iqDecrease());
